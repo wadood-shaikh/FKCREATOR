@@ -1,0 +1,66 @@
+extends base.pug
+
+block style
+    style
+        include ../static/services/styleS.css
+block content
+    nav#navbar
+        .image
+            img(src='static/home/logo.jpeg' alt='logo here')
+        .points
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/about') About
+                li
+                    a#serv.active(href='/services') Services
+                li
+                    a(href='/contact') Contact Us
+        .rn
+            form#forms(action='' method='')
+            input#search(type='text' name='search' placeholder='Search...')
+            button#btn1 Search
+    .heading.background1
+        h1 Services
+    .b
+        h1 Our Services
+    .bo
+        p
+            | Hello friends I have a Youtube channel and I always upload interesting videos on different topics such as
+            | Coding, Naat, Bayan etc. But as this is my friends Website He has also shown some of his services please see
+            | that too.
+        hr
+    .coderser.background2
+        h1 Website services
+        p
+            | Hello friends here are some website services that you can have If you want to make a website like this one or
+            | one from the websites that I have shown on the home page
+    .scard
+        .card
+            .card-img
+                img(src='static/services/tick1.png' alt='tick')
+            .card-body
+                p Make the Website as You Want.
+        .card
+            .card-img
+                img(src='static/services/tick1.png' alt='tick')
+            .card-body
+                p Submit Your Website in Your Desired Time.
+        .card
+            .card-img
+                img(src='static/services/tick1.png' alt='tick')
+            .card-body
+                p Make Changes According to your Wishes in your website.
+        .card
+            .card-img
+                img(src='static/services/tick1.png' alt='tick')
+            .card-body
+                p Create a beautiful Front-End Website
+        .card
+            .card-img
+                img(src='static/services/tick1.png' alt='tick')
+            .card-body
+                p I Will Make My First Ten Projects for Free
+    .thanks
+        h1 Thank you for visiting this website 

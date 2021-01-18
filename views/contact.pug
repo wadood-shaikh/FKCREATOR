@@ -1,0 +1,41 @@
+extends base.pug
+
+block style
+    style
+        include ../static/contact/styleC.css
+block content
+    nav#navbar
+        .image
+            img(src='static/home/logo.jpeg' alt='logo here')
+        .points
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/about') About
+                li
+                    a(href='/services') Services
+                li
+                    a#cont.active(href='/contact') Contact Us
+        .rn
+            form#forms(action='' method='')
+            input#search(type='text' name='search' placeholder='Search...')
+            button#btn1 Search
+    .contact-t
+        h1 Contact Us
+        h3 Please fill up the contact Form to contact Us 
+    .contact
+        form(action='' method='post')
+            .elem-group
+                label(for='name') Your Name
+                input#name(type='text' name='yname' placeholder='Your Name' )
+            .elem-group
+                label(for='email') Your E-mail
+                input#email(type='email' name='email' placeholder='example@example.com' required='')
+            .elem-group
+                label(for='title') Subject
+                input#title(type='text' name='subject' required='' placeholder='Your Subject. ' )
+            .elem-group
+                label(for='message') Message
+                textarea#message(name='desc' placeholder=' Your Message here.' required='')
+                button(type='submit') Send Message

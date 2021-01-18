@@ -1,0 +1,93 @@
+extends base.pug
+
+block style
+    style
+        include ../static/about/styleA.css
+block content
+    nav#navbar
+        .image
+            img(src='static/home/logo.jpeg' alt='logo here')
+        .points
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a#abou.active(href='/about') About
+                li
+                    a(href='/services') Services
+                li
+                    a(href='/contact') Contact Us
+        .rn
+            form#forms(action='' method='')
+            input#search(type='text' name='search' placeholder='Search...')
+            button#btn1 Search
+    .imagec.background1
+        h1 About Us
+    .hello
+        h1  Welcome to About Page 
+        p
+            | Hello friends welcome to About Page In this page I describe about my videos and source codes for my coding
+            | videos.
+    .infos
+        .card
+            .card-img
+                img(src='static/about/img1.webp' alt='')
+            .card-body
+                h1 New Naat Status
+                p
+                    | This video is about the recently released new naat status and is very interesting If you want to
+                    | watch that video click the button below
+                button
+                    a(href='https://www.youtube.com/watch?v=DtQCCFZFtHc' target='_blank')  Watch Video 
+        .card2
+            .card-img
+                img(src='static/about/img2.webp' alt='')
+            .card-body
+                h1 Ertugrul Ghazi
+                p
+                    | Ertugrul Ghazi is the most famous web-series in the world people from many countries have
+                    | watched the whole series and In this video I have shown the real names of the characters in
+                    | the series
+                button
+                    a(href='https://www.youtube.com/watch?v=W2j9to6Us_M' target='_blank')  Watch Video 
+        .card
+            .card-img
+                img(src='static/about/img3.webp' alt='')
+            .card-body
+                h1 How to hide an image in mobile
+                p
+                    | In this video I have shown how to hide media files such as photos and videos in our gallery. If you
+                    | want to
+                    | watch that video click the button below
+                button
+                    a(href='https://www.youtube.com/watch?v=YvKifr2ilS8' target='_blank')  Watch Video 
+        .card2
+            .card-img
+                img(src='static/about/img4.webp' alt='')
+            .card-body
+                h1 How to make a simple navbar
+                p
+                    | In this video I have shown How to make a simple navbar using html and css To watch the video click
+                    | the button below
+                button
+                    a(href='https://www.youtube.com/watch?v=FYF_tKr6rLU' target='_blank')  Watch Video 
+        .card
+            .card-img
+                img(src='static/about/img5.webp' alt='')
+            .card-body
+                h1 A bayan by Hazarat Aminul Qadri
+                p
+                    | This is a bayan given by Hazarat Aminul Qadri In which he says about the people who waste their money
+                    | for no purpose.
+                button
+                    a(href='https://www.youtube.com/watch?v=ziTdcr7U1-E' target='_blank')  Watch Video 
+        .card2
+            .card-img
+                img(src='static/about/img6.webp' alt='')
+            .card-body
+                h1 A new naat status
+                p
+                    | This video is about the recently released new naat status in 2021 and is very interesting If you want to
+                    | watch that video click the button below
+                button
+                    a(href='https://www.youtube.com/watch?v=hZ7Ffx86yrg' target='_blank')  Watch Video 
